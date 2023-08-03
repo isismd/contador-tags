@@ -44,7 +44,9 @@ Essa verificação foi feita através da declaração `try... catch`, onde no `c
 - JavaScript
 
 ## 🔍 Sites para testar
-Alguns sites não permitem que o código seja acessado, então não é possível realizar a contagem das tags. Para testar foram usados alguns sites que permitem esse acesso, como por exemplo:
+Alguns sites não permitem que o código seja acessado para requisições, então não é possível realizar a contagem das tags. Para testar foram usados sites que permitem esse acesso, como por exemplo:
 - https://sistemas.ufmt.br/ufmt.portalsistemas
+- https://jsonplaceholder.typicode.com
+- https://www.jsonplaceholder.org
 - https://isismd.github.io/sunnyside-agency-landing-page/
 - https://isismd.github.io/get-coffee/
