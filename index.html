@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/img_codigo.png">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Teste Prático - Contador de Tags</title>
+</head>
+
+<body>
+    <main>
+        <div class="texto">
+            <h1>Contador de Tags</h1>
+            <p>Aplicação para contar quantas tags HTML estão presentes no código de um determinado site. Insira a
+                URL do site que deseja consultar para realizar a contagem.</p>
+        </div>
+        <div class="areaUrl">
+            <input type="url" id="urlInput" placeholder="Digite a URL" required>
+            <button id="pegarUrl">
+                <img src="src/images/img_seta.png" alt="Seta apontando para direita">
+            </button>
+        </div>
+        <div id="tabela" class="invisivel">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Quantidade</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <p id="erro"></p>
+    </main>
+    <figure>
+        <img src="src/images/img_principal.svg" alt="Imagem de uma pessoa progamando">
+    </figure>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
