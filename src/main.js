@@ -32,8 +32,6 @@ async function pegarUrl() {
 // Função para carregar o conteudo da URL
 async function carregarConteudo(url) {
     const resposta = await fetch(url);
-
-    console.log(resposta)
     return await resposta.text();
 }
 
@@ -42,9 +40,7 @@ async function contarTags(conteudoHtml) {
     const contagemTag = {};
 
     const parser = new DOMParser();
-    console.log(parser)
     const doc = parser.parseFromString(conteudoHtml, 'text/html');
-    console.log(doc)
 
     doc.querySelectorAll('*').forEach((elemento) => {
         const nomeTag = elemento.tagName.toLowerCase();
@@ -110,7 +106,6 @@ function inserirNaTabela(dados) {
     var tbody = tabela.querySelector('tbody');
 
     tbody.innerHTML = '';
-    console.log(dados)
 
     dados.tags.forEach(function (tags) {
         var tr = document.createElement('tr');
